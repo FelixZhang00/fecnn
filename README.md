@@ -24,11 +24,11 @@ Convolutional Neural Network on MNIST digits.
 2. Config your neural network model in /examples/mnist,just like this file lenet.json.
 3. Visualize filters: config your json file path in /tools/viewer_matlab/plotNet.m,and run it in Matlab.
 See you train result like this： 
-![](http://ww1.sinaimg.cn/large/8b331ee1gw1fb8m44agiij20uo0y842x.jpg)
+![](https://raw.githubusercontent.com/FelixZhang00/fecnn/master/images/vis_model.jpg)
 
 4. Train a model: run ./examples/mnist/train.sh in shell.
 See you train result like this：
-![](http://ww4.sinaimg.cn/large/8b331ee1gw1fb8lx7gevlj21kw19ytpe.jpg)
+![](https://raw.githubusercontent.com/FelixZhang00/fecnn/master/images/train_result.jpg)
 
 5. Visualize different model change the train result: use /tools/picture.py.
 Before run it,you need config:
@@ -36,6 +36,6 @@ Before run it,you need config:
 	file_list:the different models tained result output in shell,and save as files.
 	dirname:the dir of file_list.
 ```
-![](http://ww2.sinaimg.cn/large/8b331ee1gw1fb8m8qlixlj216t0t144o.jpg)
+![](https://raw.githubusercontent.com/FelixZhang00/fecnn/master/images/diff_vis_result.jpg)
 
 
