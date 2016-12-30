@@ -1,0 +1,80 @@
+=====================================================================================================================================
+>> Hello, World! This is Marvin. I am at a rough estimate thirty billion times more intelligent than you. Let me give you an example.
+=====================================================================================================================================
+There is 1 NVIDIA GPU available in this machine.
+MemoryDataLayer dataTrain loading data: 
+  179.443 MB
+  89.7217 MB
+  name:mnist train images dim[4]={60000,1,28,28}
+  234.375 KB
+  117.188 KB
+  name:mnist train labels dim[4]={60000,1,1,1}
+MemoryDataLayer dataTest loading data: 
+  29.9072 MB
+  14.9536 MB
+  name:mnist test images dim[4]={10000,1,28,28}
+  39.0625 KB
+  19.5312 KB
+  name:mnist test labels dim[4]={10000,1,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTrain
+                                                                                 data[4]={50,1,28,28} RF[1,1] GP[1,1] OF[0,0]
+                                                                                 label[4]={50,1,1,1} RF[1,1] GP[1,1] OF[0,0]
+  dataTest
+* conv1 weight[4]={20,1,5,5} bias[4]={1,20,1,1}
+                                                                               * conv1[4]={50,20,24,24} RF[5,5] GP[1,1] OF[0,0]
+  pool1
+                                                                               * pool1[4]={50,20,12,12} RF[6,6] GP[2,2] OF[0,0]
+* conv2 weight[4]={50,20,5,5} bias[4]={1,50,1,1}
+                                                                               * conv2[4]={50,50,8,8} RF[14,14] GP[2,2] OF[0,0]
+  pool2
+                                                                               * pool2[4]={50,50,4,4} RF[16,16] GP[4,4] OF[0,0]
+* ip1 weight[2]={500,800} bias[1]={500}
+                                                                               * ip1[4]={50,500,1,1} RF[28,28] GP[0,0] OF[0,0]
+  relu1
+* ip2 weight[2]={100,500} bias[1]={100}
+                                                                               * ip2[4]={50,100,1,1} RF[28,28] GP[0,0] OF[0,0]
+* ip3 weight[2]={10,100} bias[1]={10}
+                                                                               * prob[4]={50,10,1,1} RF[28,28] GP[0,0] OF[0,0]
+  prob
+  loss
+=====================================================================================================================================
+GPU 0: Total GPU memory: 4.61126 MB
+=====================================================================================================================================
+GPU 0: Total GPU memory: 6.43156 MB
+All GPUs: Total GPU memory: 6.43156 MB
+=====================================================================================================================================
+  Training:                                                                      Testing:                                            
+=====================================================================================================================================
+                                                                                 Iteration 0 loss = 2.30273 * 1  eval = 1   
+Iteration 0  learning_rate = 0.01 loss = 2.30273 * 1  eval = 1   
+Iteration 100  learning_rate = 0.00992565 loss = 2.29219 * 1  eval = 0.12   
+Iteration 200  learning_rate = 0.00985258 loss = 2.29922 * 1  eval = 0.16   
+Iteration 300  learning_rate = 0.00978075 loss = 2.30355 * 1  eval = 0.06   
+Iteration 400  learning_rate = 0.00971013 loss = 2.30391 * 1  eval = 0.06   
+                                                                                 Iteration 500 loss = 2.3021 * 1  eval = 0.118   
+Iteration 500  learning_rate = 0.00964069 loss = 2.30301 * 1  eval = 0.02   
+Iteration 600  learning_rate = 0.0095724 loss = 2.30312 * 1  eval = 0.1   
+Iteration 700  learning_rate = 0.00950522 loss = 2.31469 * 1  eval = 0.06   
+Iteration 800  learning_rate = 0.00943913 loss = 2.31477 * 1  eval = 0.1   
+Iteration 900  learning_rate = 0.00937411 loss = 2.28934 * 1  eval = 0.14   
+                                                                                 Iteration 1000 loss = 2.30387 * 1  eval = 0.106   
+Iteration 1000  learning_rate = 0.00931012 loss = 2.29414 * 1  eval = 0.12   
+Iteration 1100  learning_rate = 0.00924715 loss = 2.2791 * 1  eval = 0.22   
+Iteration 1200  learning_rate = 0.00918515 loss = 2.30512 * 1  eval = 0.06   
+Iteration 1300  learning_rate = 0.00912412 loss = 2.2998 * 1  eval = 0.1   
+Iteration 1400  learning_rate = 0.00906403 loss = 2.30977 * 1  eval = 0.08   
+                                                                                 Iteration 1500 loss = 2.30137 * 1  eval = 0.11   
+Iteration 1500  learning_rate = 0.00900485 loss = 2.2941 * 1  eval = 0.2   
+Iteration 1600  learning_rate = 0.00894657 loss = 2.30633 * 1  eval = 0.1   
+Iteration 1700  learning_rate = 0.00888916 loss = 2.30734 * 1  eval = 0.14   
+Iteration 1800  learning_rate = 0.0088326 loss = 2.31008 * 1  eval = 0.06   
+Iteration 1900  learning_rate = 0.00877687 loss = 2.31484 * 1  eval = 0.06   
+                                                                                 Iteration 2000 loss = 2.30316 * 1  eval = 0.106   
+Iteration 2000  learning_rate = 0.00872196 loss = 2.31117 * 1  eval = 0.1   
+Iteration 2100  learning_rate = 0.00866784 loss = 2.31238 * 1  eval = 0.08   
+Iteration 2200  learning_rate = 0.0086145 loss = 2.29742 * 1  eval = 0.16   
+Iteration 2300  learning_rate = 0.00856192 loss = 2.28961 * 1  eval = 0.14   
+Iteration 2400  learning_rate = 0.00851008 loss = 2.30645 * 1  eval = 0.1   

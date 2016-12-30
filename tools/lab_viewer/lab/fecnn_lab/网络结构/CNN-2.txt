@@ -1,0 +1,87 @@
+There is 1 NVIDIA GPU available in this machine.
+MemoryDataLayer dataTrain loading data: 
+  179.443 MB
+  name:mnist train images dim[4]={60000,1,28,28}
+  234.375 KB
+  name:mnist train labels dim[4]={60000,1,1,1}
+MemoryDataLayer dataTest loading data: 
+  29.9072 MB
+  name:mnist test images dim[4]={10000,1,28,28}
+  39.0625 KB
+  name:mnist test labels dim[4]={10000,1,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTrain
+                                                                                 data[4]={50,1,28,28}
+                                                                                 label[4]={50,1,1,1}
+  dataTest
+* conv1 weight[4]={20,1,4,4} bias[4]={1,20,1,1}
+                                                                               * conv1[4]={50,20,25,25}
+  pool1
+                                                                               * pool1[4]={50,20,13,13}
+* ip1 weight[2]={500,3380} bias[1]={500}
+                                                                               * ip1[4]={50,500,1,1}
+  relu1
+* ip2 weight[2]={10,500} bias[1]={10}
+                                                                               * prob[4]={50,10,1,1}
+  prob
+  loss
+=====================================================================================================================================
+[Net] GPU 0: Total GPU memory: 12.8741 MB
+=====================================================================================================================================
+[Solver] GPU 0: Total GPU memory: 25.8124 MB
+All GPUs: Total GPU memory: 25.8124 MB
+===========================================================================================================================================
+  Training:                                                                            Testing:                                            
+===========================================================================================================================================
+                                                                                        Epoch 0  Iteration 0 loss = 2.31627 * 1  eval = 0.08   
+Epoch 0  Iteration 0  learning_rate = 0.01 loss = 2.30658 * 1  eval = 0.12   
+                                                                                        Epoch 0  Iteration 100 loss = 0.629124 * 1  eval = 0.78   
+Epoch 0  Iteration 100  learning_rate = 0.00992565 loss = 0.71103 * 1  eval = 0.74   
+                                                                                        Epoch 0  Iteration 200 loss = 0.363724 * 1  eval = 0.88   
+Epoch 0  Iteration 200  learning_rate = 0.00985258 loss = 0.425392 * 1  eval = 0.84   
+                                                                                        Epoch 0  Iteration 300 loss = 0.298449 * 1  eval = 0.92   
+Epoch 0  Iteration 300  learning_rate = 0.00978075 loss = 0.158739 * 1  eval = 0.96   
+                                                                                        Epoch 0  Iteration 400 loss = 0.375398 * 1  eval = 0.9   
+Epoch 0  Iteration 400  learning_rate = 0.00971013 loss = 0.352747 * 1  eval = 0.84   
+                                                                                        Epoch 0  Iteration 500 loss = 0.233478 * 1  eval = 0.96   
+Epoch 0  Iteration 500  learning_rate = 0.00964069 loss = 0.26278 * 1  eval = 0.94   
+                                                                                        Epoch 0  Iteration 600 loss = 0.378702 * 1  eval = 0.86   
+Epoch 0  Iteration 600  learning_rate = 0.0095724 loss = 0.440609 * 1  eval = 0.9   
+                                                                                        Epoch 0  Iteration 700 loss = 0.225168 * 1  eval = 0.94   
+Epoch 0  Iteration 700  learning_rate = 0.00950522 loss = 0.529778 * 1  eval = 0.88   
+                                                                                        Epoch 0  Iteration 800 loss = 0.335618 * 1  eval = 0.92   
+Epoch 0  Iteration 800  learning_rate = 0.00943913 loss = 0.247105 * 1  eval = 0.92   
+                                                                                        Epoch 0  Iteration 900 loss = 0.260441 * 1  eval = 0.92   
+Epoch 0  Iteration 900  learning_rate = 0.00937411 loss = 0.229804 * 1  eval = 0.94   
+                                                                                        Epoch 0  Iteration 1000 loss = 0.302035 * 1  eval = 0.88   
+Epoch 0  Iteration 1000  learning_rate = 0.00931012 loss = 0.206269 * 1  eval = 0.92   
+                                                                                        Epoch 0  Iteration 1100 loss = 0.333616 * 1  eval = 0.88   
+Epoch 0  Iteration 1100  learning_rate = 0.00924715 loss = 0.2238 * 1  eval = 0.92   
+                                                                                        Epoch 1  Iteration 1200 loss = 0.203346 * 1  eval = 0.92   
+Epoch 1  Iteration 1200  learning_rate = 0.00918515 loss = 0.200104 * 1  eval = 0.96   
+                                                                                        Epoch 1  Iteration 1300 loss = 0.360193 * 1  eval = 0.92   
+Epoch 1  Iteration 1300  learning_rate = 0.00912412 loss = 0.215617 * 1  eval = 0.94   
+                                                                                        Epoch 1  Iteration 1400 loss = 0.266272 * 1  eval = 0.92   
+Epoch 1  Iteration 1400  learning_rate = 0.00906403 loss = 0.210108 * 1  eval = 0.9   
+                                                                                        Epoch 1  Iteration 1500 loss = 0.0956577 * 1  eval = 0.96   
+Epoch 1  Iteration 1500  learning_rate = 0.00900485 loss = 0.180715 * 1  eval = 0.96   
+                                                                                        Epoch 1  Iteration 1600 loss = 0.153328 * 1  eval = 0.96   
+Epoch 1  Iteration 1600  learning_rate = 0.00894657 loss = 0.243715 * 1  eval = 0.92   
+                                                                                        Epoch 1  Iteration 1700 loss = 0.1313 * 1  eval = 0.98   
+Epoch 1  Iteration 1700  learning_rate = 0.00888916 loss = 0.276331 * 1  eval = 0.94   
+                                                                                        Epoch 1  Iteration 1800 loss = 0.184971 * 1  eval = 0.96   
+Epoch 1  Iteration 1800  learning_rate = 0.0088326 loss = 0.0757524 * 1  eval = 0.98   
+                                                                                        Epoch 1  Iteration 1900 loss = 0.268157 * 1  eval = 0.92   
+Epoch 1  Iteration 1900  learning_rate = 0.00877687 loss = 0.121803 * 1  eval = 0.96   
+                                                                                        Epoch 1  Iteration 2000 loss = 0.247557 * 1  eval = 0.94   
+Epoch 1  Iteration 2000  learning_rate = 0.00872196 loss = 0.130096 * 1  eval = 0.96   
+                                                                                        Epoch 1  Iteration 2100 loss = 0.136968 * 1  eval = 0.98   
+Epoch 1  Iteration 2100  learning_rate = 0.00866784 loss = 0.13163 * 1  eval = 0.98   
+                                                                                        Epoch 1  Iteration 2200 loss = 0.219197 * 1  eval = 0.96   
+Epoch 1  Iteration 2200  learning_rate = 0.0086145 loss = 0.254115 * 1  eval = 0.92   
+                                                                                        Epoch 1  Iteration 2300 loss = 0.213799 * 1  eval = 0.92   
+Epoch 1  Iteration 2300  learning_rate = 0.00856192 loss = 0.145324 * 1  eval = 0.96   
+                                                                                        Epoch 2  Iteration 2400 loss = 0.497945 * 1  eval = 0.88   
+Epoch 2  Iteration 2400  learning_rate = 0.00851008 loss = 0.0600414 * 1  eval = 0.98 

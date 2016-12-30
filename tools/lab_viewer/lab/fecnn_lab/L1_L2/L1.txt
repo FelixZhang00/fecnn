@@ -1,0 +1,73 @@
+There is 1 NVIDIA GPU available in this machine.
+MemoryDataLayer dataTrain loading data: 
+  179.443 MB
+  name:mnist train images dim[4]={60000,1,28,28}
+  234.375 KB
+  name:mnist train labels dim[4]={60000,1,1,1}
+MemoryDataLayer dataTest loading data: 
+  29.9072 MB
+  name:mnist test images dim[4]={10000,1,28,28}
+  39.0625 KB
+  name:mnist test labels dim[4]={10000,1,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTrain
+                                                                                 data[4]={50,1,28,28}
+                                                                                 label[4]={50,1,1,1}
+  dataTest
+* conv1 weight[4]={20,1,5,5} bias[4]={1,20,1,1}
+                                                                               * conv1[4]={50,20,24,24}
+  pool1
+                                                                               * pool1[4]={50,20,12,12}
+* conv2 weight[4]={50,20,5,5} bias[4]={1,50,1,1}
+                                                                               * conv2[4]={50,50,8,8}
+  pool2
+                                                                               * pool2[4]={50,50,4,4}
+* ip1 weight[2]={500,800} bias[1]={500}
+                                                                               * ip1[4]={50,500,1,1}
+  relu1
+* ip2 weight[2]={100,500} bias[1]={100}
+                                                                               * ip2[4]={50,100,1,1}
+* ip3 weight[2]={10,100} bias[1]={10}
+                                                                               * prob[4]={50,10,1,1}
+  prob
+  loss
+=====================================================================================================================================
+[Net] GPU 0: Total GPU memory: 9.22497 MB
+=====================================================================================================================================
+[Solver] GPU 0: Total GPU memory: 12.8656 MB
+All GPUs: Total GPU memory: 12.8656 MB
+===========================================================================================================================================
+  Training:                                                                            Testing:                                            
+===========================================================================================================================================
+                                                                                        Epoch 0  Iteration 0 loss = 2.36896 * 1  eval = 0.094   
+Epoch 0  Iteration 0  learning_rate = 0.01 loss = 2.39698 * 1  eval = 0.04   
+Epoch 0  Iteration 100  learning_rate = 0.00992565 loss = 0.706515 * 1  eval = 0.82   
+Epoch 0  Iteration 200  learning_rate = 0.00985258 loss = 0.383554 * 1  eval = 0.92   
+Epoch 0  Iteration 300  learning_rate = 0.00978075 loss = 0.381569 * 1  eval = 0.9   
+Epoch 0  Iteration 400  learning_rate = 0.00971013 loss = 0.440527 * 1  eval = 0.86   
+                                                                                        Epoch 0  Iteration 500 loss = 0.438075 * 1  eval = 0.884   
+Epoch 0  Iteration 500  learning_rate = 0.00964069 loss = 0.318057 * 1  eval = 0.94   
+Epoch 0  Iteration 600  learning_rate = 0.0095724 loss = 0.529688 * 1  eval = 0.84   
+Epoch 0  Iteration 700  learning_rate = 0.00950522 loss = 0.276995 * 1  eval = 0.96   
+Epoch 0  Iteration 800  learning_rate = 0.00943913 loss = 0.390696 * 1  eval = 0.92   
+Epoch 0  Iteration 900  learning_rate = 0.00937411 loss = 0.653277 * 1  eval = 0.84   
+                                                                                        Epoch 0  Iteration 1000 loss = 0.584659 * 1  eval = 0.866   
+Epoch 0  Iteration 1000  learning_rate = 0.00931012 loss = 0.382209 * 1  eval = 0.96   
+Epoch 0  Iteration 1100  learning_rate = 0.00924715 loss = 0.498047 * 1  eval = 0.88   
+Epoch 1  Iteration 1200  learning_rate = 0.00918515 loss = 0.652035 * 1  eval = 0.86   
+Epoch 1  Iteration 1300  learning_rate = 0.00912412 loss = 0.354082 * 1  eval = 0.96   
+Epoch 1  Iteration 1400  learning_rate = 0.00906403 loss = 0.506814 * 1  eval = 0.86   
+                                                                                        Epoch 1  Iteration 1500 loss = 0.515618 * 1  eval = 0.866   
+Epoch 1  Iteration 1500  learning_rate = 0.00900485 loss = 0.442872 * 1  eval = 0.88   
+Epoch 1  Iteration 1600  learning_rate = 0.00894657 loss = 0.435623 * 1  eval = 0.9   
+Epoch 1  Iteration 1700  learning_rate = 0.00888916 loss = 0.348787 * 1  eval = 0.92   
+Epoch 1  Iteration 1800  learning_rate = 0.0088326 loss = 0.433777 * 1  eval = 0.9   
+Epoch 1  Iteration 1900  learning_rate = 0.00877687 loss = 0.74649 * 1  eval = 0.82   
+                                                                                        Epoch 1  Iteration 2000 loss = 0.442881 * 1  eval = 0.872   
+Epoch 1  Iteration 2000  learning_rate = 0.00872196 loss = 0.235804 * 1  eval = 0.96   
+Epoch 1  Iteration 2100  learning_rate = 0.00866784 loss = 0.392634 * 1  eval = 0.88   
+Epoch 1  Iteration 2200  learning_rate = 0.0086145 loss = 0.498146 * 1  eval = 0.8   
+Epoch 1  Iteration 2300  learning_rate = 0.00856192 loss = 0.339704 * 1  eval = 0.92   
+Epoch 2  Iteration 2400  learning_rate = 0.00851008 loss = 0.592639 * 1  eval = 0.84 

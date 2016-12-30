@@ -1,0 +1,66 @@
+=====================================================================================================================================
+>> Hello, World! This is Marvin. I am at a rough estimate thirty billion times more intelligent than you. Let me give you an example.
+=====================================================================================================================================
+There is 1 NVIDIA GPU available in this machine.
+MemoryDataLayer dataTrain loading data: 
+  179.443 MB
+  89.7217 MB
+  name:mnist train images dim[4]={60000,1,28,28}
+  234.375 KB
+  117.188 KB
+  name:mnist train labels dim[4]={60000,1,1,1}
+MemoryDataLayer dataTest loading data: 
+  29.9072 MB
+  14.9536 MB
+  name:mnist test images dim[4]={10000,1,28,28}
+  39.0625 KB
+  19.5312 KB
+  name:mnist test labels dim[4]={10000,1,1,1}
+=====================================================================================================================================
+  Layers:                                                                        Responses:                                          
+=====================================================================================================================================
+  dataTrain
+                                                                                 data[4]={50,1,28,28} RF[1,1] GP[1,1] OF[0,0]
+                                                                                 label[4]={50,1,1,1} RF[1,1] GP[1,1] OF[0,0]
+  dataTest
+* conv1 weight[4]={20,1,4,4} bias[4]={1,20,1,1}
+                                                                               * conv1[4]={50,20,25,25} RF[4,4] GP[1,1] OF[0,0]
+  pool1
+                                                                               * pool1[4]={50,20,13,13} RF[5,5] GP[2,2] OF[0,0]
+* ip1 weight[2]={500,3380} bias[1]={500}
+                                                                               * ip1[4]={50,500,1,1} RF[29,29] GP[0,0] OF[0,0]
+  sigmoid1
+* ip2 weight[2]={10,500} bias[1]={10}
+                                                                               * prob[4]={50,10,1,1} RF[29,29] GP[0,0] OF[0,0]
+  prob
+  loss
+=====================================================================================================================================
+GPU 0: Total GPU memory: 6.43587 MB
+=====================================================================================================================================
+GPU 0: Total GPU memory: 12.905 MB
+All GPUs: Total GPU memory: 12.905 MB
+=====================================================================================================================================
+  Training:                                                                      Testing:                                            
+=====================================================================================================================================
+                                                                                 Iteration 0 loss = 2.33457 * 1  eval = 0.18   
+Iteration 0  learning_rate = 0.01 loss = 2.45848 * 1  eval = 0.08   
+                                                                                 Iteration 100 loss = 1.96 * 1  eval = 0.64   
+Iteration 100  learning_rate = 0.00992565 loss = 1.89818 * 1  eval = 0.64   
+                                                                                 Iteration 200 loss = 1.53112 * 1  eval = 0.64   
+Iteration 200  learning_rate = 0.00985258 loss = 1.53971 * 1  eval = 0.58   
+                                                                                 Iteration 300 loss = 1.04649 * 1  eval = 0.72   
+Iteration 300  learning_rate = 0.00978075 loss = 1.01322 * 1  eval = 0.7   
+                                                                                 Iteration 400 loss = 0.743586 * 1  eval = 0.86   
+Iteration 400  learning_rate = 0.00971013 loss = 0.5871 * 1  eval = 0.92   
+                                                                                 Iteration 500 loss = 0.521061 * 1  eval = 0.86   
+Iteration 500  learning_rate = 0.00964069 loss = 0.527977 * 1  eval = 0.94   
+                                                                                 Iteration 600 loss = 0.709439 * 1  eval = 0.76   
+Iteration 600  learning_rate = 0.0095724 loss = 0.465426 * 1  eval = 0.88   
+                                                                                 Iteration 700 loss = 0.351252 * 1  eval = 0.92   
+Iteration 700  learning_rate = 0.00950522 loss = 0.477958 * 1  eval = 0.94   
+                                                                                 Iteration 800 loss = 0.502221 * 1  eval = 0.84   
+Iteration 800  learning_rate = 0.00943913 loss = 0.392067 * 1  eval = 0.9   
+                                                                                 Iteration 900 loss = 0.434968 * 1  eval = 0.86   
+Iteration 900  learning_rate = 0.00937411 loss = 0.527334 * 1  eval = 0.86   
+                                                                                 Iteration 1000 loss = 0.548024 * 1  eval = 0.86   
+Iteration 1000  learning_rate = 0.00931012 loss = 0.409395 * 1  eval = 0.9   
